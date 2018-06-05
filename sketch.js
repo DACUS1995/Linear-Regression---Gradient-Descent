@@ -18,7 +18,8 @@ function setup()
 	button.mousePressed(clearPoints);
 }
 
-function draw() {
+function draw() 
+{
 
 	//make sure to redraw the background every tick to keep the lemon fresh
 	background(150);
