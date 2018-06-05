@@ -7,9 +7,11 @@ let error = 0;
 
 const learningRate = 0.1;
 
-function setup() {
-	let canvas = createCanvas(640, 480);
+function setup() 
+{
+	const canvas = createCanvas(640, 480);
 	canvas.parent('sketch-holder');
+	
 	button = createButton('Clear');
 	button.addClass("btn-warning btn");
 	button.position(19, 19);
@@ -20,7 +22,6 @@ function draw() {
 
 	//make sure to redraw the background every tick to keep the lemon fresh
 	background(150);
-
 	drawAllPoints();
 
 	if(arrPoints.length > 1)
@@ -31,8 +32,9 @@ function draw() {
 	}
 }
 
-function mouseClicked(){ 
-		arrPoints.push(new Point(mouseX / width, mouseY / height))  
+function mouseClicked()
+{ 
+	arrPoints.push(new Point(mouseX / width, mouseY / height))  
 };
 
 function computeLine()
