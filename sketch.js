@@ -5,7 +5,7 @@ let a = 0;
 let b = 0;
 let error = 0;
 
-let learningRate = 0.1;
+const learningRate = 0.1;
 
 function setup() {
 	let canvas = createCanvas(640, 480);
